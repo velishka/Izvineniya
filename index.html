@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Айлин - Ты прекрасна!</title>
+    <title>Ты потрясающая, Айлин!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
@@ -18,7 +19,8 @@
             text-align: center;
             color: #fff;
             background: linear-gradient(135deg, #ff8a00, #e52e71);
-            animation: gradientAnimation 5s ease infinite;
+            animation: gradientAnimation 7s ease infinite;
+            overflow: hidden;
         }
 
         @keyframes gradientAnimation {
@@ -36,12 +38,16 @@
         h1 {
             font-size: 3rem;
             margin: 0;
+            font-family: 'Sacramento', cursive;
+            color: #fff;
             animation: fadeIn 3s ease-out;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #fff;
+            margin-top: 10px;
+            font-family: 'Sacramento', cursive;
             animation: slideIn 3s ease-out;
         }
 
@@ -49,8 +55,11 @@
             font-size: 1.2rem;
             color: #f9f9f9;
             margin-top: 20px;
-            animation: fadeIn 4s ease-out;
             font-weight: bold;
+            animation: fadeIn 4s ease-out;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @keyframes fadeIn {
@@ -73,6 +82,41 @@
             }
         }
 
+        .emoji {
+            font-size: 3rem;
+            margin-top: 20px;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .quotes-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .quote {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 20px;
+            font-style: italic;
+            animation: fadeIn 5s ease-out;
+            max-width: 600px;
+            text-align: center;
+        }
+
         .button {
             margin-top: 30px;
             padding: 15px 30px;
@@ -91,53 +135,41 @@
             background-color: #ff8a00;
         }
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
             }
-            40% {
-                transform: translateY(-10px);
+            h2 {
+                font-size: 2rem;
             }
-            60% {
-                transform: translateY(-5px);
+            p {
+                font-size: 1rem;
+                margin: 10px;
             }
-        }
-
-        .quote {
-            font-size: 1.5rem;
-            color: #fff;
-            margin-top: 20px;
-            font-style: italic;
-            animation: fadeIn 5s ease-out;
-        }
-
-        .quotes-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            .emoji {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Ты - невероятно красивая, Айлин!</h1>
-    <h2>Ты как звезда, которая освещает мир вокруг!</h2>
-    <p>Твоя улыбка способна растопить любые сердца, а твоя доброта и забота делают мир лучше.</p>
-    <p>Ты вдохновляешь людей вокруг себя быть лучше, и твоя красота сияет не только снаружи, но и внутри.</p>
+    <h1>Ты невероятно красивая, Айлин!</h1>
+    <h2>Твоя красота ослепительна ✨</h2>
+
+    <div class="emoji">💖🌹💫</div>
+
+    <p>Айлин, ты как лучик света в этом мире. Твоя доброта и сияние делают этот мир красивее. Ты вдохновляешь каждого, кто тебя окружает.</p>
+    <p>Твоя улыбка — это то, что заставляет мир быть ярче. Каждый момент с тобой наполнен счастьем и радостью. Ты — сама настоящая звезда. 🌟</p>
 
     <div class="quotes-container">
-        <p class="quote">"Красота заключается не только в внешности, но и в том свете, который ты излучаешь." - Неизвестный</p>
-        <p class="quote">"Ты - не просто красивый человек. Ты - воплощение мечты." - Неизвестный</p>
-        <p class="quote">"Настоящая красота — это когда твоя душа сияет через твое лицо." - Неизвестный</p>
-        <p class="quote">"Ты невероятно красив, потому что твоя доброта делает мир лучше." - Неизвестный</p>
-        <p class="quote">"Когда ты улыбаешься, мир становится ярче." - Неизвестный</p>
-        <p class="quote">"Ты как цветок — каждый день расцветаешь все красивее." - Неизвестный</p>
-        <p class="quote">"Твоя красота — это не просто черты лица, это свет в твоих глазах." - Неизвестный</p>
-        <p class="quote">"Ты — вдохновение для всех, кто тебя окружает." - Неизвестный</p>
-        <p class="quote">"Внешняя красота исчезает, но твоя внутренняя всегда будет сиять." - Неизвестный</p>
+        <p class="quote">"Светишь ты не только внешней красотой, но и внутренним светом." - Неизвестный</p>
+        <p class="quote">"Твоя доброта и улыбка — это то, что делает мир ярче." - Неизвестный</p>
+        <p class="quote">"Твоя энергия и сила вдохновляют на большие поступки." - Неизвестный</p>
+        <p class="quote">"Твоя красота исходит изнутри, и это делает тебя уникальной." - Неизвестный</p>
     </div>
 
-    <button class="button" onclick="alert('Ты потрясающая, Айлин!')">Поздравляю тебя, Айлин!</button>
+    <button class="button" onclick="alert('Ты потрясающая, Айлин! 💖')">Ты невероятна!</button>
 
 </body>
 </html>
