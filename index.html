@@ -27,12 +27,14 @@
             font-size: 3rem;
             margin: 0;
             animation: fadeIn 3s ease-in-out;
+            color: #fff;
         }
 
         p {
             font-size: 1.5rem;
             margin: 20px;
             animation: fadeIn 5s ease-in-out;
+            color: #fff;
         }
 
         .message {
@@ -41,6 +43,7 @@
             margin-top: 20px;
             opacity: 0;
             animation: messageShow 4s ease-in-out forwards;
+            color: #fff;
         }
 
         @keyframes fadeIn {
@@ -98,11 +101,11 @@
 
     <div class="hearts"></div>
 
-    <!-- Музыка с Google Drive -->
-    <audio autoplay loop>
-        <source src="https://drive.google.com/uc?export=download&id=1k2wypOO_yXddgZtKoPPrG1BYTvNQ6Kpi" type="audio/mpeg">
-        Ваш браузер не поддерживает аудио.
-    </audio>
+    <!-- Видео с Google Drive -->
+    <video autoplay loop muted>
+        <source src="https://drive.google.com/uc?export=download&id=1k2wypOO_yXddgZtKoPPrG1BYTvNQ6Kpi" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
 
     <script>
         function createHeart() {
