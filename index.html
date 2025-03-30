@@ -22,6 +22,7 @@
             animation: gradientAnimation 7s ease infinite;
             overflow: hidden;
             position: relative;
+            transition: background 2s ease-out;
         }
 
         @keyframes gradientAnimation {
@@ -189,6 +190,9 @@
 
     <div class="emoji">💫🌹💖</div>
 
+    <p>"Всё, что ты делаешь, должно быть наполнено светом, как твоя душа." — из книги "Алхимик" Пауло Коэльо</p>
+    <p>"Ты — как загадка, но с каждой минутой тебе становишься всё более понятной и удивительной." — из книги "Гордость и предубеждение" Джейн Остин</p>
+
     <button class="press-button">
         Нажми
         <span> - От Вели 🤗</span>
@@ -207,6 +211,13 @@
         <div class="star" style="top: 90%; left: 60%; animation-delay: 8s;"></div>
         <div class="star" style="top: 95%; left: 10%; animation-delay: 9s;"></div>
     </div>
+
+    <script>
+        setTimeout(() => {
+            document.body.style.transition = "background 2s ease-out";
+            document.body.style.backgroundColor = "transparent"; // Исчезновение фона
+        }, 5000); // Через 5 секунд фон исчезает
+    </script>
 
 </body>
 </html>
