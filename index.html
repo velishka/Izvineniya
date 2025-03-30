@@ -18,25 +18,25 @@
             flex-direction: column;
             text-align: center;
             color: #fff;
-            background: linear-gradient(135deg, #ff8a00, #e52e71);
+            background: linear-gradient(135deg, #ff66cc, #9b59b6);
             animation: gradientAnimation 7s ease infinite;
             overflow: hidden;
         }
 
         @keyframes gradientAnimation {
             0% {
-                background: linear-gradient(135deg, #ff8a00, #e52e71);
+                background: linear-gradient(135deg, #ff66cc, #9b59b6);
             }
             50% {
-                background: linear-gradient(135deg, #00c6ff, #0072ff);
+                background: linear-gradient(135deg, #9b59b6, #ff66cc);
             }
             100% {
-                background: linear-gradient(135deg, #ff8a00, #e52e71);
+                background: linear-gradient(135deg, #ff66cc, #9b59b6);
             }
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             margin: 0;
             font-family: 'Sacramento', cursive;
             color: #fff;
@@ -44,7 +44,7 @@
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             color: #fff;
             margin-top: 10px;
             font-family: 'Sacramento', cursive;
@@ -52,7 +52,7 @@
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #f9f9f9;
             margin-top: 20px;
             font-weight: bold;
@@ -108,7 +108,7 @@
         }
 
         .quote {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #fff;
             margin-top: 20px;
             font-style: italic;
@@ -135,20 +135,57 @@
             background-color: #ff8a00;
         }
 
+        .button:active {
+            background-color: #ff66cc;
+        }
+
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
             }
             h2 {
-                font-size: 2rem;
+                font-size: 1.2rem;
             }
             p {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 margin: 10px;
             }
             .emoji {
                 font-size: 2.5rem;
             }
+        }
+
+        .press-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #9b59b6;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .press-button:hover {
+            background-color: #ff66cc;
+        }
+
+        .press-button:active {
+            background-color: #9b59b6;
+        }
+
+        .press-button:focus {
+            outline: none;
+        }
+
+        .press-button span {
+            display: none;
+        }
+
+        .press-button:hover span {
+            display: inline;
         }
     </style>
 </head>
@@ -169,7 +206,10 @@
         <p class="quote">"Твоя красота исходит изнутри, и это делает тебя уникальной." - Неизвестный</p>
     </div>
 
-    <button class="button" onclick="alert('Ты потрясающая, Айлин! 💖')">Ты невероятна!</button>
+    <button class="press-button">
+        Нажми
+        <span> - От Вели 🤗</span>
+    </button>
 
 </body>
 </html>
